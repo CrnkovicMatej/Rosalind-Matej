@@ -18,9 +18,6 @@ for k in listOfURLs:
     for line in file:
         temp += line.decode("utf-8")
     listOfFastas.append(temp)
-    ##for line in file:
-      ##  temp += str(line)
-    ##print(temp)
 
 i=0
 for k in listOfFastas:
