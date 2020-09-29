@@ -37,8 +37,3 @@ for i in range(len(listOfStrings[0])):
         break
 print(lcsb)
 
-##alternativno
-l = ["abc", "aab", "caab"]
-lens = ((i, j) for i in range(len(l[-1]) + 1) for j in range(i + 1, len(l[-1]) + 1) if all(l[0][i:j] in l[k] for k in range(1, len(l))))
-longest = max(lens, key=lambda x: x[1] - x[0])
-print(l[0][longest[0]:longest[1]])
